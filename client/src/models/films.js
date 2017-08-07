@@ -10,6 +10,12 @@ var Films = function(){
   });
 
   var review2 = new Review({
+    comment: "Hmm, not so good, what a waste of time",
+    rating: 1,
+    author: "John"
+  });
+
+  var review3 = new Review({
     comment: "Pew pew pew lightsabers space cowboys whoot what's not to love",
     rating: 100,
     author: "Val"
@@ -26,7 +32,8 @@ var Films = function(){
   });
 
   film1.addReview(review1);
-  film2.addReview(review2);
+  film1.addReview(review2);
+  film2.addReview(review3);
 
   return [film1, film2];
 }
